@@ -8,26 +8,29 @@ body {
 }
 
 :root {
-    --orange-background-color: #fa6600;
-    --black-background-color: #282828;
-    --roboto-condensed-font-family: 'Roboto Condensed', sans-serif;
-    --roboto-font-family: 'Roboto', sans-serif;
+    --orange: #fa6600;
+    --black: #282828;
+    --roboto-condensed: 'Roboto Condensed', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: var(--roboto-font-family);
+    font-family: var(--roboto);
     background-color: #f0f0f0;
-    color: black;
 }
 
-header {
-    background-color: var(--orange-background-color);
+.navbar.navbar-expand-lg.navbar-dark {
+    background-color: var(--orange);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    padding: 10px;
+    
 }
 
 /*
-nav {}
 
 main {}
+
 */
 
 form input,
@@ -49,13 +52,13 @@ aside {}
 
 footer {
     margin-top: 10px;
-    background-color: var(--black-background-color);
+    background-color: var(--black);
 }
 
 /* ICI ON MET LES CLASS ET ID */
 
-/* MEDIA QUERIES DESKTOP 
-
+/* MEDIA QUERIES DESKTOP */
+/*
 @media only screen (min-width: 992px) {
     ...
-}
+} */
