@@ -49,7 +49,19 @@ main {
     border-bottom: 1px solid #ffa400;
     padding-bottom: 20px;
 }
-
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 form input,
 select,
