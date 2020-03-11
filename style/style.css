@@ -30,6 +30,15 @@ nav {}
 main {}
 */
 
+.fa-html5 {
+    color: 	#e34f26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
 form input,
 select,
 textarea {
