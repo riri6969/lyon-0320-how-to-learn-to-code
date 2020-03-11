@@ -24,14 +24,29 @@
             </div>
         </section>
         <section>
-            <svg height="100" width="100">
+
+            <!-- ////////////////////////////////////////////////////////////////////////////////// WEB /////// -->
+            <svg height="100" width="100" data-toggle="modal" data-target="#modal_web">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
                 Sorry, your browser does not support inline SVG. 
                 
                 <text x="26" y="56" fill="black">WEB</text>
             </svg> 
 
-            <svg height="100" width="100">
+            <!-- ////////////////////////////////////////////////////////////////////////////////// LEARN /////// -->
+
+
+            <svg height="100" width="100" style="align-self: flex-start; margin-left: 10px" data-toggle="modal" data-target="#modal_learn">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+                Sorry, your browser does not support inline SVG. 
+                
+                <text x="26" y="56" fill="black">Learn</text>
+            </svg>
+
+            <!-- ////////////////////////////////////////////////////////////////////////////////// HTML /////// -->
+
+
+            <svg height="100" width="100" data-toggle="modal" data-target="#modal_html">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
                 Sorry, your browser does not support inline SVG. 
                 
@@ -40,9 +55,12 @@
 
             <svg height="50" width="100">
                 <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg> 
+            </svg>
+            
+            <!-- ////////////////////////////////////////////////////////////////////////////////// CSS /////// -->
 
-            <svg height="100" width="100">
+
+            <svg height="100" width="100" data-toggle="modal" data-target="#modal_css">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
                 Sorry, your browser does not support inline SVG. 
                 
@@ -53,10 +71,11 @@
                 <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgb(0,0,0);stroke-width:2" />
             </svg> 
 
-            <svg height="160" width="200">
+            <!-- ////////////////////////////////////////////////////////////////////////////////// JS /////// -->
+
+            <svg height="160" width="200" data-toggle="modal" data-target="#modal_js">
                 <polygon points="0,0 200,0 100,150" style="fill:yellow;stroke:black;stroke-width:3;" />
-                Sorry, your browser does not support inline SVG.
-              
+                Sorry, your browser does not support inline SVG.              
                 
                 <text x="50" y="40" fill="black" style="font-size:22px;">JavaScript</text>
             </svg> 
@@ -65,8 +84,9 @@
                 <line x1="50" y1="0" x2="50" y2="140" style="stroke:rgb(0,0,0);stroke-width:2x" />
             </svg> 
 
+            <!-- //////////////////////////////////////////////////////////////////////////// FrameWork /////// -->
 
-            <svg height="160" width="200">
+            <svg height="160" width="200" data-toggle="modal" data-target="#modal_react">
                 <polygon points="100,0 200,150 0,150" style="fill:yellow;stroke:black;stroke-width:3;" />
                 Sorry, your browser does not support inline SVG.
               
@@ -74,16 +94,18 @@
                 <text x="50" y="40" fill="black" style="font-size:22px;">ReactJS</text>
             </svg> 
 
-            <span style="display: flex;flex-direction: row;justify-content: space-between;">
-                <svg height="160" width="200" id="angularTS">
+
+            <span>
+                <svg height="160" width="200" id="angularTS" data-toggle="modal" data-target="#modal_angular">
                     <polygon points="100,0 200,150 0,150" style="fill:yellow;stroke:black;stroke-width:3;" />
                     Sorry, your browser does not support inline SVG.
                   
                     
                     <text x="50" y="40" fill="black" style="font-size:22px;">ANGULAR</text>
                 </svg> 
+
     
-                <svg height="160" width="200" id="vueJS">
+                <svg height="160" width="200" id="vueJS" data-toggle="modal" data-target="#modal_vue">
                     <polygon points="100,0 200,150 0,150" style="fill:yellow;stroke:black;stroke-width:3;" />
                     Sorry, your browser does not support inline SVG.
                   
@@ -91,6 +113,248 @@
                     <text x="50" y="40" fill="black" style="font-size:22px;">VueJS</text>
                 </svg>
             </span>
+
+            <p style="font-weight: bold;text-transform: uppercase; margin-top: 20px; font-size: larger; ">Choose your Framework</p>
+
+            <svg height="150" width="100">
+                <line x1="50" y1="0" x2="50" y2="140" style="stroke:rgb(0,0,0);stroke-width:2x" />
+            </svg> 
+
+            <div class="container">
+
+                <!-- The Modal -->
+                <div class="modal fade" id="modal_web">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Modal body..
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>    
+                </div>
+            <div class="container">
+            
+                <!-- ////////////////////////////////////////////////////////////////////////////////// LEARN /////// -->
+            
+                <div class="container">  
+                    <!-- The Modal -->
+                    <div class="modal fade" id="modal_learn">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    </div>
+                  <div class="container">
+                
+                <!-- ////////////////////////////////////////////////////////////////////////////////// HTML /////// -->
+            
+                <div class="container">  
+                    <!-- The Modal -->
+                    <div class="modal fade" id="modal_html">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    </div>
+                  <div class="container">
+                
+                <!-- ////////////////////////////////////////////////////////////////////////////////// CSS /////// -->
+            
+                <div class="container">  
+                    <!-- The Modal -->
+                    <div class="modal fade" id="modal_css">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    </div>
+                  <div class="container">
+            
+                <!-- ////////////////////////////////////////////////////////////////////////////////// JS /////// -->
+            
+                <div class="container">  
+                    <!-- The Modal -->
+                    <div class="modal fade" id="modal_js">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    </div>
+                <div class="container">
+            
+                <!-- //////////////////////////////////////////////////////////////////////////// FrameWork /////// -->
+            
+                <div class="container">  
+                    <!-- The Modal -->
+                    <div class="modal fade" id="modal_react">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                          
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                </div>
+                  <div class="container">
+            
+            
+                    <div class="container">  
+                        <!-- The Modal -->
+                        <div class="modal fade" id="modal_angular">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                Modal body..
+                              </div>
+                              
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>    
+                        </div>
+                      <div class="container">
+            
+                        <div class="container">  
+                            <!-- The Modal -->
+                            <div class="modal fade" id="modal_vue">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    Modal body..
+                                  </div>
+                                  
+                                  <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>    
+                            </div>
+                          <div class="container">
 
         </section>
     </main>

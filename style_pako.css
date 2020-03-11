@@ -50,13 +50,23 @@ main > section:nth-of-type(2) > svg:first-of-type {
     margin-bottom: 60px;
 }
 
+main > section:nth-of-type(2) > span {
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
 #angularTS {
     align-self: start;
 }
 
 #vueJS {
     align-self: end;
+    margin-left: 50px;
 }
+
+/* .container {
+    display: none;
+} */
 
 
 
