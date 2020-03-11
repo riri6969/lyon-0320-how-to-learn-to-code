@@ -70,6 +70,13 @@ footer {
 
 /* ICI ON MET LES CLASS ET ID */
 
+.infos-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5%;
+  }
+
 /* MEDIA QUERIES DESKTOP */
 /*
 @media only screen (min-width: 992px) {
