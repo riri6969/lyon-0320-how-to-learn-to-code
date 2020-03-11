@@ -43,139 +43,145 @@
 
   </header>
 
-  <main>
-      <main>
-          <section>
-              <h2>Les ressources et outils</h2>
-              <p>Nous allons regrouper ici différentes ressources qui vont grandement vous servir. On y retrouvera des cours en ligne, des documentations, et des outils indispensables.<br> On vous a déja préparer le terrain en séparant les contenus selon leur sujet.</p>
-          </section>
-  
-          <section class="accordion" id="accordionExample">
+  <main class>
+    <section>
+        <h2>Les ressources et outils</h2>
+        <p class="intro-ressources">Nous allons regrouper ici différentes ressources qui vont grandement vous servir. On y retrouvera des cours en ligne, des documentations, et des outils indispensables.<br> On vous a déja préparer le terrain en séparant les contenus selon leur sujet.</p>
+    </section>
 
-              <section class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Front End
-                    </button>
-                  </h2>
-                </div> 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                      <ul>
-                          <li>
-                              <h3>HTML</h3>
-                              <i class="fab fa-html5 fa-6x"></i>                  
-                          </li>
-                          <li>
-                            <h4>Bien débuter :</h4>
-                            <p>Pour débuter votre découverte du HTML rien ne vaut une belle définition et un tour d'horizon. On vous conseille donc deux ressources pour bien débuter : </p>
-                            <p>Une page appartenant à la documentations de Mozilla vous définissant le langage et son fonctionnment : <br><a href="https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_HTML" target="_blank">Les bases du HTML</a></p>
-                            <p>Deuxièmement il va falloir mettre en pratique ces notions. Cette introduction à HTML vous guidera dans votre découverte de ce langage (ressources en anglais): <br><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Introduction to HTML</a></p>
-                            
-                          </li>
-                          <li>
-                            <h4>Aller plus ploin avec HTML :</h4>
-                            <p>Pour aller plus loin et continuer la pratique, voici un bon cours avec ces exercices pour commencer à coder (ce cours utilisera CSS, évoquer dans la partie suivante): <br><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Apprenez à créer votre site web avec HTML5 et CSS3</a></p>
-                          </li>                         
-                      </ul>
-                      <ul>
-                          <li>
-                              <h3>CSS</h3>
-                              <i class="fab fa-css3-alt fa-6x"></i>                         
-                          </li>
-                          <li>
-                            <h4>Bien débuter :</h4>
-                            <p>Pour débuter à utiliser du CSS il faudra déjà quelques bases en HTML. Car sans html pas de CSS. Pour bien comprendre comment il fonctionne.</p>
-                            <p>La première ressource que nous vous présentons est tirer de la documentation de Mozilla et vous donnera une bonne vue d'ensemble pour comprendre le fonctionnement de CSS : <br><a href="https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_CSS" target="_blank">Les bases des CSS</a></p>
-                            <p>Une autre ressources intéressante et très complète pour approfondir ses connaissances. Il s'agit d'un répertoire de toutes les fonctions de CSS : <br><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial</a></p>
-                            
-                          </li>
-                          <li>
-                            <h4>Aller plus loin avec CSS :</h4>
-                            <p>Une autre ressource avec que du contenu sur CSS. Des bonnes présentations des fonctions du CSS avec des schéma (par exemple sur Flexbox) et pleins de news sur CSS: <br><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></p>
-                          </li>
-                      </ul>
-                      <ul>
-                          <li>
-                              <h3>JavaScript</h3>
-                              <i class="fab fa-js-square fa-6x"></i>
-                          </li>
-                          <li>
-                            <h4>Pour bien débuter avec JavaScript :</h4>
-                            <p>Encore une fois la documentation de Mozilla sera un bon début. Très complète, elle permettra de définir clairement le JavaScript et ses utilisations : <br><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">MDN - JavaScript</a></p>
-                            <p>Pour commencer la pratique facilement, le parcours JavaScript de Sololearn est très bien fait (ressource en anglais): <br><a href="https://www.sololearn.com/Course/JavaScript" target="_blank">JavaScript Tutorial</a></p>
-                          </li>
-                          <li>
-                            <h4>Pour aller plus loin avec JavaScript :</h4>
-                            <p>Un répertoire très complet de W3C avec tutoriel et détails de toutes les fonctions : <br><a href="https://www.w3schools.com/js/" target="_blank">JavaScript Tutorial</a></p>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
-              </section>
+    <section class="accordion" id="accordionExample">
 
+        <section class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link ressources" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Bien débuter HTML / CSS / JavaScript
+              </button>
+            </h2>
+          </div> 
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li class="d-flex align-items-center">
+                        <h3 class="col-8 font-weight-bold">HTML</h3>
+                        <i class="col-4 fab fa-html5 fa-6x"></i> 
+                    </li>
+                    <li>
+                      <h4 class="p-3">Bien débuter :</h4>
+                      <p>Pour débuter votre découverte du HTML rien ne vaut une belle définition et un tour d'horizon. 
+                        On vous conseille donc deux ressources pour bien débuter : </p>
+                      <p>Une page appartenant à la documentations de Mozilla vous définissant le langage et son 
+                        fonctionnment :<br>
+                        <a href="https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_HTML" target="_blank">Les bases du HTML</a></p>
+                      <p>Deuxièmement il va falloir mettre en pratique ces notions. Cette introduction à HTML 
+                        vous guidera dans votre découverte de ce langage (ressources en anglais): <br>
+                        <a href="https://www.codecademy.com/learn/learn-html" target="_blank">Introduction to HTML</a></p>
+                      
+                    </li>
+                    <li>
+                      <h4 class="p-3">Aller plus ploin avec HTML :</h4>
+                      <p>Pour aller plus loin et continuer la pratique, voici un bon cours avec ces exercices pour commencer à coder (ce cours utilisera CSS, évoquer dans la partie suivante): <br><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Apprenez à créer votre site web avec HTML5 et CSS3</a></p>
+                    </li>                         
+                </ul>
+                <hr class="m-5">
+                <ul>
+                    <li class="d-flex align-items-center">
+                      <h3 class="col-8 font-weight-bold">CSS</h3>
+                      <i class="col-4 fab fa-css3-alt fa-6x"></i>
+                    </li>
+                    <li>
+                      <h4 class="p-3">Bien débuter :</h4>
+                      <p>Pour débuter à utiliser du CSS il faudra déjà quelques bases en HTML. Car sans html pas de CSS. Pour bien comprendre comment il fonctionne.</p>
+                      <p>La première ressource que nous vous présentons est tirer de la documentation de Mozilla et vous donnera une bonne vue d'ensemble pour comprendre le fonctionnement de CSS : <br><a href="https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_CSS" target="_blank">Les bases des CSS</a></p>
+                      <p>Une autre ressources intéressante et très complète pour approfondir ses connaissances. Il s'agit d'un répertoire de toutes les fonctions de CSS : <br><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial</a></p>
+                      
+                    </li>
+                    <li>
+                      <h4 class="p-3">Aller plus loin avec CSS :</h4>
+                      <p>Une autre ressource avec que du contenu sur CSS. Des bonnes présentations des fonctions du CSS avec des schéma (par exemple sur Flexbox) et pleins de news sur CSS: <br><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></p>
+                    </li>
+                </ul>
+                <hr class="m-5">
+                <ul>
+                    <li class="d-flex align-items-center">
+                      <h3 class="col-8 font-weight-bold">JavaScript</h3>
+                      <i class="col-4 fab fa-js-square fa-6x"></i>                           
+                    </li>
+                    <li>
+                      <h4 class="p-3">Bien débuter :</h4>
+                      <p>Encore une fois la documentation de Mozilla sera un bon début. Très complète, elle permettra de définir clairement le JavaScript et ses utilisations : <br><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">MDN - JavaScript</a></p>
+                      <p>Pour commencer la pratique facilement, le parcours JavaScript de Sololearn est très bien fait (ressource en anglais): <br><a href="https://www.sololearn.com/Course/JavaScript" target="_blank">JavaScript Tutorial</a></p>
+                    </li>
+                    <li>
+                      <h4 class="p-3">Aller plus loin avec JavaScript :</h4>
+                      <p>Un répertoire très complet de W3C avec tutoriel et détails de toutes les fonctions : <br><a href="https://www.w3schools.com/js/" target="_blank">JavaScript Tutorial</a></p>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </section>
 
-              <section class="card">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Back End
-                    </button>
-                  </h2>
-                </div>
+        <section class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Les ressources indispensables
+              </button>
+            </h2>
+          </div>
 
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                      <ul>
-                          <li>
-                              <h3>PHP</h3>
-                          </li>
-                          <li>
-                              <h3>Python</h3>
-                          </li>
-                          <li>
-                              <h3>SQL</h3>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
-              </section>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    <li class="d-flex align-items-center">
+                        <h3 class="col-8 font-weight-bold">Les ressources indispensables</h3>
+                        <i class="col-4 fas fa-book-open fa-3x"></i>
+                    </li>
+                    <li>
+                        <h4 class="p-4">OpenclassRoom, CodeAcademy, Sololearn</h4>
+                    </li>
+                    <li>
+                        <h4 class="p-4">Test</h4>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </section>
 
+        <section class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Les outils indispensables
+              </button>
+            </h2>
+          </div>
 
-              <section class="card">
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                  <li class="d-flex align-items-center">
+                    <h3 class="col-8 font-weight-bold">Les outils indispensables</h3>
+                    <i class="col-4 fas fa-tools fa-3x"></i>
+                  </li>
+                    <li>
+                        <h4 class="p-4">Editeur de texte / IDE</h4>
+                        <p>Outils très utile pour vérifier la bonne exécution de son code HTML <br><a href="https://validator.w3.org/" target="_blank">le W3C Markup Validation Service</a></p>
+                    </li>
+                    <li>
+                        <h4 class="p-4">Git / GitHub</h4>
+                    </li>
+                    <li>
+                        <h4 class="p-4">navigateur et inspecteur</h4>
+                    </li>
+                </ul>
+            </div>
+          </div>
 
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Outils
-                    </button>
-                  </h2>
-                </div>
+        </section>
 
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                      <ul>
-                        <li>
-                          <p>Outils très utile pour vérifier la bonne exécution de son code HTML <br><a href="https://validator.w3.org/" target="_blank">le W3C Markup Validation Service</a></p>
-                        </li>
-                          <li>
-                              <h3>Editeur de texte / IDE</h3>
-                          </li>
-                          <li>
-                              <h3>Git / GitHub</h3>
-                          </li>
-                          <li>
-                              <h3>Inspecteur</h3>
-                          </li>
-                      </ul>
-                  </div>
-                </div>
+    </section>
 
-              </section>
-
-          </section>
-      </main> 
   </main>
   <!-- Footer -->
   <footer class="page-footer font-small">
