@@ -3,6 +3,7 @@
 html,
 body {
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -16,8 +17,15 @@ body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: var(--roboto);
     background-color: #f0f0f0;
+    padding-top: 40px;
+}
+
+nav {
+    position: fixed;
 }
 
 .navbar-brand {
@@ -31,7 +39,7 @@ body {
     margin: 0 15px;
 }
 
-.navbar.navbar-expand-lg.navbar-light {
+.navbar.fixed-top.navbar-expand-lg.navbar-light {
     background: linear-gradient(to right, var(--orange), #ffa400);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
     font-weight: bold;
@@ -39,11 +47,10 @@ body {
     padding: 10px;
 }
 
-/*
-
-main {}
-
-*/
+main {
+    height: auto;
+    padding: 20px;
+}
 
 form input,
 select,
@@ -54,16 +61,8 @@ textarea {
     box-sizing: border-box;
 }
 
-/*
-section {}
-
-article {}
-
-aside {}
-*/
-
 footer {
-    margin-top: 5vh;
+    margin-top: auto;
     background-color: var(--black);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
     color: white;
@@ -83,8 +82,33 @@ footer a:hover {
 
 /* ICI ON MET LES CLASS ET ID */
 
+#accordion-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#accordion-howto h2 {
+    font-size: 1.6em;
+}
+
+.btn.btn-link {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-link:hover {
+    color: var(--orange);
+}
+
 /* MEDIA QUERIES DESKTOP */
-/*
-@media only screen (min-width: 992px) {
-    ...
-} */
+
+@media only screen and (min-width: 992px) {
+    #accordion-howto h2 {
+        font-size: 2em;
+    }
+}
