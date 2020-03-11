@@ -38,19 +38,46 @@ main h1 {margin: 50px auto;}
 
 /* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
 
+li {
+    list-style-type: none;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+li:first-of-type {}
+
 main section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    margin-top: 80px;  
+    width: 500px;
+    margin: 80px auto;
 }
 
 main > section:nth-of-type(2) > svg:first-of-type {
     margin-bottom: 60px;
 }
 
-main > section:nth-of-type(2) > span {
+#c_s_s {
+    display: inline-block;
+}
+
+#c_s_s > svg:nth-of-type(2) , #c_s_s > svg:nth-of-type(4) {
+    margin-top: 50px;
+}
+
+#j_s_ {
+    display: inline-block;
+}
+
+#g_i_t_ {
+    position: absolute;
+    top: 1050px;
+    left: 30px;
+}
+
+#frameWorks {
     margin-top: 60px;
     justify-content: space-between;
 }

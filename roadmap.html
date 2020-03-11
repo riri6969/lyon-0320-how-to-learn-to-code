@@ -16,7 +16,7 @@
 
     <main>
         <section>
-            <h1>De la graine... au fruit</h1>
+            <h1>Step by Step</h1>
 
             <div>
                 <button class="button_pako button_pako_front">Front-end</button>
@@ -59,26 +59,75 @@
             
             <!-- ////////////////////////////////////////////////////////////////////////////////// CSS /////// -->
 
+            <span id="c_s_s">
 
-            <svg height="100" width="100" data-toggle="modal" data-target="#modal_css">
+                <svg height="30" width="50" style="margin-left: 50px;">
+                    <text x="0" y="15" fill="black">SaSS</text>
+                </svg> 
+
+                <svg height="50" width="50">
+                    <line x1="0" y1="0" x2="50" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+                </svg> 
+
+
+                <svg height="100" width="100" data-toggle="modal" data-target="#modal_css">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+                    Sorry, your browser does not support inline SVG. 
+                    
+                    <text x="32" y="56" fill="black">CSS</text>
+                </svg> 
+
+                <svg height="50" width="50">
+                    <line x1="0" y1="0" x2="50" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+                </svg>
+
+                <svg height="30" width="100">
+                    <text x="0" y="15" fill="black">BootStrap</text>
+                </svg>
+            
+            </span>
+            
+    
+                <svg height="50" width="100">
+                    <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgb(0,0,0);stroke-width:2" />
+                </svg> 
+
+            <!-- ////////////////////////////////////////////////////////////////////////////////// JS /////// -->
+            <span id="j_s_">
+                <svg height="80" width="100" data-toggle="modal" data-target="#modal_ES6">
+                    <polygon points="50,0 100,75 0,75" style="fill:yellow;stroke:black;stroke-width:3;" />
+                    Sorry, your browser does not support inline SVG.
+                  
+                    
+                    <text x="32" y="60" fill="black" style="font-size:18px;">ES6</text>
+                </svg> 
+
+                <svg height="160" width="200" data-toggle="modal" data-target="#modal_js" style="margin: 0 -40px;">
+                    <polygon points="0,0 200,0 100,150" style="fill:yellow;stroke:black;stroke-width:3;" />
+                    Sorry, your browser does not support inline SVG.              
+                    
+                    <text x="50" y="40" fill="black" style="font-size:22px;">JavaScript</text>
+                </svg> 
+
+                <svg height="80" width="100" data-toggle="modal" data-target="#modal_TS">
+                    <polygon points="50,0 100,75 0,75" style="fill:yellow;stroke:black;stroke-width:3;" />
+                    Sorry, your browser does not support inline SVG.
+                  
+                    
+                    <text x="37" y="60" fill="black" style="font-size:18px;">TS</text>
+                </svg> 
+
+            </span>
+        
+             <!-- ////////////////////////////////////////////////////////////////////////////////// GIT /////// -->
+
+
+            <svg id="g_i_t_" height="100" width="100" style="align-self: flex-start; margin-left: 10px" data-toggle="modal" data-target="#modal_learn">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
                 Sorry, your browser does not support inline SVG. 
                 
-                <text x="32" y="56" fill="black">CSS</text>
-            </svg> 
-
-            <svg height="50" width="100">
-                <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgb(0,0,0);stroke-width:2" />
-            </svg> 
-
-            <!-- ////////////////////////////////////////////////////////////////////////////////// JS /////// -->
-
-            <svg height="160" width="200" data-toggle="modal" data-target="#modal_js">
-                <polygon points="0,0 200,0 100,150" style="fill:yellow;stroke:black;stroke-width:3;" />
-                Sorry, your browser does not support inline SVG.              
-                
-                <text x="50" y="40" fill="black" style="font-size:22px;">JavaScript</text>
-            </svg> 
+                <text x="24" y="56" fill="black">GIT</text>
+            </svg>
 
             <svg height="150" width="100">
                 <line x1="50" y1="0" x2="50" y2="140" style="stroke:rgb(0,0,0);stroke-width:2x" />
@@ -95,7 +144,7 @@
             </svg> 
 
 
-            <span>
+            <span id="frameWorks">
                 <svg height="160" width="200" id="angularTS" data-toggle="modal" data-target="#modal_angular">
                     <polygon points="100,0 200,150 0,150" style="fill:yellow;stroke:black;stroke-width:3;" />
                     Sorry, your browser does not support inline SVG.
@@ -116,9 +165,18 @@
 
             <p style="font-weight: bold;text-transform: uppercase; margin-top: 30px; font-size: 28px; ">Choose your Framework</p>
 
-            <svg height="150" width="100">
-                <line x1="50" y1="0" x2="50" y2="140" style="stroke:rgb(0,0,0);stroke-width:2x" />
+            <svg height="200" width="100" style="z-index: 1;">
+                <line x1="50" y1="0" x2="50" y2="200" style="stroke:rgb(0,0,0);stroke-width:2x" />
             </svg> 
+
+            <svg height="80" width="550" style="z-index: 2;margin-top: -170px;">
+                <g fill="none" stroke="black" stroke-width="4">
+              
+                  <path stroke-dasharray="40,20" d="M15 80 l700 0" />
+              
+                </g>
+                Sorry, your browser does not support inline SVG.
+            </svg>
 
 
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -211,14 +269,21 @@
                         
                          <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">HyperText Mark-up Langage</h4>
+                                <h4 class="modal-title"> <img style="width: 100px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///9CQkI/Pz9WVlY1NTXt7e0xMTFHR0fd3d3z8/PNzc08PDw5OTkyMjI3NzctLS3AwMBNTU1cXFyFhYXm5ub4+Ph0dHSenp7W1tasrKxpaWmkpKS+vr56enqLi4tvb2+1tbWWlpYnJydjY2PIyMiAgIASEhKRkZEpr7soAAAIlklEQVR4nO2da3uiOhSFIyKK3NSCt1ZrWz39///wYB2mJcqSyF5A58n7eTpxQy4re68EpSwWi8VisVgsFovFYrFYLBaLxWKxWH4Tk/Gwf4wnghGmidM/klQwwpEz6B/OSDBCf96/EJ25LxhhtuhhhItMMEL1GnQd0BXBq2SAatfDCHeiEe7DrgO6ItyLRrjqYYQr0QgPbtcBXeEeRCM8Rl0HdEV0FI1w3cMI16IRTno4DiVlaS5Me7jiS8rSXLaN+xaiM5YUbTm9E6bOXDZA1Tth6iyEI+ydMBWWpUo99S7CJ+EIeyfbhEVbD2WbsGhTatY3URPNhCOcel2HpOFNhSOcJF2HpJHIirZc1PQuQmFJo9R71yFpvEsHqHq3WohHOOyXbHOG4hFu+yVqgq14hD2TbeKirXeyTVy0KbWJuw6qRLwRj/ClX8LUfRGPcAqEqRO7DFCvERdtuWyrFqbO1h8xQDU9cdEGZRthbboABoa8aFMZmEsD8dYuAC0cihYPv8hQlxFv7YsR6DZz+QhRto3QZc6gof9BaG9ZLWo82fRzAZi+gyWhPSDbPNkiSQHInBBEm1Jv1VONcKGrAMio8I3Q3nN1e+J5rwvgmcbPhPZAPpEgg8+cqscF5ZmCcS9sGigAlQSCaINzN2Vmg+uTJy/alEqrRwVldYIVvZCxPo0qmyMJU1iVlXTt/W2w+pHqGiqbSHAEj1TUtfcXVCQtP9L0P08AtCGVLo9eANk2zRcxYud0CJm2M8C9p3lb6L4GYddeAXDvabKNbkcNPykRrurLNnb6mCLaoGzTW2TbUUlCGLj39F7DtqNGDNGm1Lr6HQan8j9lJ8hdzoYUuPd0cws7QS7s2isYVQ8ufQVm+xoChmjLqV4CdBW1JvsaHE6ACqzjTjnCCbeXOmNShGi/pglT7opPkqV4z10e+mTZRtpxm8g2sh2VlDWBq5wuMrjClCTajGQb145KEm1wldMztCARKIC4a68AuPf0LDtI5gpAqiJA9167sk30fOxPUBlYl21e01O+MEJONS8HabHyv5yG46aAtjxWgEi26WVgvymoPMoSbbgMLK32gXiniTZcBpbesYGMAk20YdkmnVdAxTyWaMOyTdqFhQrAnHLlnVbFnXSfoAAs79orAO498cI6SEgSXHsFSLad7v+5ER9gu83JJZ5JgWyTrpUgCxZLtCk1qp7BxYukYHMSkTJtOX51q9LpLx9tTmiyVGXgSIKwWTCtnradIcG1VwCGfyjbdUAJgeSLuABkWywr29p27RUA9164mTZC27aDpZfi2isAQmMQN7IlJNpqA1x0FNdejXYbor+YbkQb89CFQbKOKNqYZ2X1hCtwAhBFm1ITWl3QIGnucsqjF1JaolfbQSNtEfBkaS5MUQasEVoWZFSd9HLGPFmKD100Iy6/GNBZKEctvuGdlS2/GDDgiZm2M1tShM6wvF9Ae22Oa6+AZXbS1TQSbRzXXgGSbUFUwuhtG1R2SK69AiDbgv1x9oOjURlYT/O0fdTiG5Rt07KYRh3awBhHFW3Yvadloo3cewbmRtIRpAJw914j954u2kAyQfiuPZ0URKjN4ka3EhmItogp2pTyQc1LSxAZXSYZa0ZxMEt5VEmDysDOuNw0yCVdo52BAQ9yEHEDVAOwq9HceybjULu5GiTXiQXgC/XLwCZ3gOs/G4g2sizFZeDyWMrqB3h1CeILmNC4os3IvWfgT9RlaXeizeisrIFs018MaIUs2ljuPRPRdiBHaOLeq59c9bSHA0Y7WbRBm4ve1WaLJArv91Qn9LytpsSQ35or2vBKdVUT8o/7cewGwAAfuPH8bXqlUsCqSywAX8jQbRy3/iA97OZRfKvXBa47PM1u/mBwqUlCFm0qQ9Xnir/x18+voVfqsHnXdHabScWvRVcYOuwIkYMAXfTnT9/myaXDOmGUDFdr8EvRUGDd9vMN2LndGyKjl9049sL50/FOIR659riZtjNg911nmptMa1QdkGtP2rdzDci2iS1VyLXHFm3tuPdQAZjn2itow70HRBu1AHwByTapHoREG+uoxTdItknZQLoUbflaBVIozuA0a+rIGh12QOaxLt0q/QKUfnGCKPlYrR+NMpcFw1wWgAZo52N//op7W/dckM13B/NHPdksB969vQjpUpMSKFn7/SrdcPh5rK8g/dnTPI5R7yz+Z6ZrrwDItvKrzDvspoaAydbP9TaSX/8rX7TBqfzq98TJfP+CRk56OA2S2CChw3TtFZgdLcxfZbC9vZHwp58LuD++FSHTtVdgfrTQCd3BUpt7JputU7dr/oDq2it46GhhPvck888/uyZ/ts+75kOOgBZEW4MbIfJlJFhu1qtt/MDL+0MLog1fmXyXIN8BN7FzkMujF8g3QmCEvda34bn3akB17RWgQxd8+KJNGdWUpKGXRy90+KWLFnKJZ1juvRqQXXsFHX45t4Vc4hnk3iPTimjr9EsXrYi2Tr90QXbtFXT45VzSXXs67KvKAJQLkq8BtS824ndT3Cbr7gNl8p8iu013vdRtKcLOhKn4F3KrWCQP79EbxRcmzBPAP/Fnn+MH8ywP8zPP0w7p5jVwW3qVTugGeq6uFbLp2yKMzPKdD0QXBR+ra09Ra6SHp7FJztqM4Ctn3sHLK5NNnhfvj+cHq8hf3vu20lPUOtlxPw8NE/QoOtPaVTtMNsvx3fpfnfDic/2xHQFqjJ/PPXdquPdeXqMacjuMXk7hbS/i3ejiyHlq7ANoh/XzdmA29+Tzyvi1Tj21P4yO+3umg78ErvfxNm1nYyRKlm6W3r25J59X3FMXekWM6duwchk565XFcxvVJDLpy2nuXc09gRsN98df2DVvk+ue1+h77nFCL6z2QP9a/OPeOfugz/ugG/b8f4T08DrcQfuJxWKxWCwWi8VisVgsFovFYrFYLBbLv8v/pBaoy5noQfUAAAAASUVORK5CYII=" alt=""> HyperText Mark-up Langage</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                       
                          <!-- Modal body -->
-                            <div class="modal-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in eleifend nisl. Maecenas consequat nulla id ipsum accumsan ultricies vitae in sapien. In hac habitasse platea dictumst. Vestibulum id mi ut nisl suscipit varius et eu velit. </p>
-                            </div>
+                         <article>
+                            <ul class="modal-body">
+                                <li>Langage descriptif qui définit la structure d'une page web.</li>
+                                <li>Un document HTML est un document texte brut structuré par des éléments. Les éléments sont encadrés par des balises ouvrantes et fermantes associées.</li>
+                                <li>On peut préciser les balises HTML avec des attributs pour fournir des informations complémentaires qui vont modifier la façon dont le navigateur va interpréter l'élément :</li>
+                            </ul>
+                            <img src="https://media.prod.mdn.mozit.cloud/attachments/2019/04/30/16605/062cb4fe603e903b23cb074b25623a67/anatomie-element-html.png" alt="https://media.prod.mdn.mozit.cloud/attachments/2019/04/30/16605/062cb4fe603e903b23cb074b25623a67/anatomie-element-html.png" class="transparent" style="width: 480px;">
+                            <cite>source:  <a href="https://developer.mozilla.org/fr/docs/Glossaire/HTML">developer.mozilla.org</a></cite>
+                         </article>
+                            
                       
                          <!-- Modal footer -->
                             <div class="modal-footer">
@@ -413,11 +478,10 @@
                                     </ul>
                                 </div>                          
                                   
-                                </div>
-                              </div>
-                            </div>    
-                            </div>
-                          <div class="container">
+                        </div>
+                     </div>
+                </div>    
+             </div>
 
         </section>
     </main>
