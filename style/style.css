@@ -32,7 +32,7 @@ nav {
     display: flex;
     align-items: center;
     font-family: var(--Montserrat-Subra);
-    
+
 }
 
 .fa-connectdevelop {
@@ -51,6 +51,7 @@ main {
     height: auto;
     padding: 20px;
 }
+
 /* Armin Riri */
 .wrapper {
     width: 400px;
@@ -58,19 +59,22 @@ main {
     border-bottom: 1px solid #ffa400;
     padding-bottom: 20px;
 }
+
 .container {
     position: relative;
     text-align: center;
     color: black;
     margin-right: auto;
     margin-left: auto;
-  }
+}
+
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
 .hyperlink {
     color: #ffa400;
 }
@@ -95,18 +99,22 @@ p.intro-ressources {
 }
 
 /* Modif couleur logo page ressources */
-.fa-html5   {
+.fa-html5 {
     color: #e34f26;
 }
+
 .fa-css3-alt {
     color: #264de4;
 }
+
 .fa-js-square {
     color: #f0db4f;
 }
+
 .fa-book-open {
     color: var(--orange);
 }
+
 .fa-tools {
     color: var(--orange);
 }
@@ -131,6 +139,10 @@ footer a {
     color: white;
 }
 
+footer p {
+    color: white;
+}
+
 footer a:hover {
     text-decoration: none;
     color: var(--orange);
@@ -140,69 +152,61 @@ footer a:hover {
 }
 /* ICI ON MET LES CLASS ET ID */
 
-  
-.infos-section
-{
+
+.infos-section {
     width: 85%;
     margin: 8px auto;
 }
 
-.infos-section h2
-{
+.infos-section h2 {
     text-align: center;
     padding-bottom: 30px;
 }
 
-.infos-section h3
-{
+.infos-section h3 {
     font-size: x-large;
 }
 
-.infos-form
-{
+.infos-form {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.infos-form input, select, textarea
-{   
+.infos-form input,
+select,
+textarea {
     width: 85%;
     border-radius: 5px;
-    margin: 8px auto; 
+    margin: 8px auto;
     border: none;
     border-bottom-style: none;
 }
 
-.infos-form input:focus, .infos-form textarea:focus
-{
+.infos-form input:focus,
+.infos-form textarea:focus {
     background-color: rgb(230, 230, 230);
     border: 1px solid #ff8300;
 }
 
-.infos-form .button
-{
+.infos-form .button {
     background-color: #ff8300;
 }
 
-.infos-form .button:hover
-{
+.infos-form .button:hover {
     background-color: #ffa400;
     font-weight: bold;
 }
 
-.infos-form select option
-{
+.infos-form select option {
     color: black;
 }
 
-.infos-form select:invalid
-{
+.infos-form select:invalid {
     color: grey;
 }
 
-.infos-form textarea
-{
+.infos-form textarea {
     overflow: auto;
     resize: none;
 }
@@ -228,16 +232,24 @@ footer a:hover {
 
 .btn.btn-link:hover {
     color: var(--orange);
+}
 
 /* MEDIA QUERIES DESKTOP */
 
 @media only screen and (min-width: 992px) {
-    .infos-form input, select, textarea, .button {
+
+    .infos-form input,
+    select,
+    textarea,
+    .button {
         width: 60%;
     }
+
     #accordion-howto h2 {
         font-size: 2em;
     }
+
     #pading-photo p {
         padding-left: 20px;
+    }
 }
