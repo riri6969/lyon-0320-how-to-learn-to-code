@@ -43,31 +43,55 @@ li {
 }
 
 cite {
-    display: block;
-    margin-left: 20px;
-    margin-top: 40px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+cite > a {
+    margin-left: 10px;
 }
 
 pre { 
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    margin: 40px 40px;
+    width: 390px;
 }
 
 pre > var:not(:first-of-type), pre > strong:last-of-type {
     margin-left: 100px;
 }
 
-.modal-footer {
-    position: relative;
-    right: 0;
-    padding-right: 0;
+blockquote > p {
+    margin:0;
+}
 
+.modal-header {
+    display: flex;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer > h6 {
+    margin-bottom: 4px;
+}
+
+.modal-footer > i {
+    font-size: 26px;
 }
 
 .modal-body > li:not(:last-of-type) {
     margin-bottom: 20px;
+}
+
+.modal-body > li:first-of-type {
+    display: flex; 
+    margin-top: 20px;
 }
 
 #anatomie {
