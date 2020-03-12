@@ -52,10 +52,176 @@ footer {
     background-color: var(--black-background-color);
 }
 
+
+
 /* ICI ON MET LES CLASS ET ID */
+
+
 
 /* MEDIA QUERIES DESKTOP 
 
 @media only screen (min-width: 992px) {
     ...
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// PAKO STYLE MODAFUCKA ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////// */
+
+#pako_main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#pako_main h1 {margin: 50px auto;}
+
+.button_pako {
+    border: none;
+    color: white;
+    padding: 12px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button_pako_back {
+    background-color: #444;
+    color: WHITE;
+    border: 2px solid #555555;
+    cursor: not-allowed;
+}
+.button_pako_front {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+#pako_main .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
+
+l#pako_main i {
+    list-style-type: none;
+}
+
+#pako_main cite {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+#pako_main cite > a {
+    margin-left: 10px;
+}
+
+#pako_main pre { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 390px;
+}
+
+#pako_main pre > var:not(:first-of-type), pre > strong:last-of-type {
+    margin-left: 100px;
+}
+
+#pako_main blockquote > p {
+    margin:0;
+}
+
+#pako_main .modal-header {
+    display: flex;
+}
+
+#pako_main .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pako_main .modal-footer > h6 {
+    margin-bottom: 4px;
+}
+
+#pako_main .modal-footer > i {
+    font-size: 26px;
+}
+
+#pako_main .modal-body > li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+#pako_main .modal-body > li:first-of-type {
+    display: flex; 
+    margin-top: 20px;
+}
+
+#pako_main #anatomie {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+blockquote
+{
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 32px;
+  font-family: Consolas, "Times New Roman", Verdana;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+}
+
+#pako_main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 500px;
+    margin: 80px auto;
+}
+
+#pako_main > section:nth-of-type(2) > svg:first-of-type {
+    margin-bottom: 60px;
+}
+
+#pako_main #c_s_s {
+    display: inline-block;
+}
+
+#pako_main #c_s_s > svg:nth-of-type(2) , #c_s_s > svg:nth-of-type(4) {
+    margin-top: 50px;
+}
+
+#pako_main #j_s_ {
+    display: inline-block;
+}
+
+#pako_main #g_i_t_ {
+    position: absolute;
+    top: 1050px;
+    left: 30px;
+}
+
+#pako_main #frameWorks {
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+#pako_main #angularTS {
+    align-self: start;
+}
+
+#pako_main #vueJS {
+    align-self: end;
+    margin-left: 50px;
 }
