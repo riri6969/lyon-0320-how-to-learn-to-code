@@ -3,32 +3,77 @@
 html,
 body {
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --orange-background-color: #fa6600;
-    --black-background-color: #282828;
-    --roboto-condensed-font-family: 'Roboto Condensed', sans-serif;
-    --roboto-font-family: 'Roboto', sans-serif;
+    --orange: #ff8300;
+    --black: #343a40;
+    --roboto-condensed: 'Roboto Condensed', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --Montserrat-Subra: 'Montserrat Subrayada', sans-serif;
 }
 
 body {
-    font-family: var(--roboto-font-family);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--roboto);
     background-color: #f0f0f0;
-    color: black;
+    padding-top: 40px;
 }
 
-body > header:first-of-type {
-    background-color: var(--orange-background-color);
+nav {
+    position: fixed;
 }
 
-/*
-nav {}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: var(--Montserrat-Subra);
+    
+}
 
-main {}
-*/
+.fa-connectdevelop {
+    margin: 0 15px;
+}
+
+.navbar.fixed-top.navbar-expand-lg.navbar-light {
+    background: linear-gradient(to right, var(--orange), #ffa400);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+main {
+    height: auto;
+    padding: 20px;
+}
+
+/* Texte intro-ressources */
+
+p.intro-ressources {
+    padding: 20px;
+}
+
+/* Modif couleur logo page ressources */
+.fa-html5   {
+    color: #e34f26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
+.fa-book-open {
+    color: var(--orange);
+}
+.fa-tools {
+    color: var(--orange);
+}
 
 form input,
 select,
@@ -39,29 +84,56 @@ textarea {
     box-sizing: border-box;
 }
 
-/*
-section {}
-
-article {}
-
-aside {}
-*/
-
-body > footer:last-of-type {
-    margin-top: 10px;
-    background-color: var(--black-background-color);
+footer {
+    margin-top: auto;
+    background-color: var(--black);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    color: white;
 }
 
+footer a {
+    color: white;
+}
 
+footer a:hover {
+    text-decoration: none;
+    color: var(--orange);
+    transition-duration: 0.5s;
+    margin-top: 10px;
+    background-color: var(--black);
+}
 
 /* ICI ON MET LES CLASS ET ID */
 
+#accordion-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 
-/* MEDIA QUERIES DESKTOP 
+#accordion-howto h2 {
+    font-size: 1.6em;
+}
 
-@media only screen (min-width: 992px) {
-    ...
+.btn.btn-link {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-link:hover {
+    color: var(--orange);
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media only screen and (min-width: 992px) {
+    #accordion-howto h2 {
+        font-size: 2em;
+    }
 }
 
 
@@ -81,7 +153,7 @@ body > footer:last-of-type {
 .button_pako {
     border: none;
     color: white;
-    padding: 12px 80px;
+    padding: 6px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -109,7 +181,9 @@ body > footer:last-of-type {
 
 /* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
 
-l#pako_main i {
+#pako_main { height: 1840px;}
+
+#pako_main li {
     list-style-type: none;
 }
 
@@ -186,7 +260,7 @@ l#pako_main i {
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    width: 500px;
+    width: 440px;
     margin: 80px auto;
 }
 
@@ -204,12 +278,22 @@ l#pako_main i {
 
 #pako_main #j_s_ {
     display: inline-block;
+    width: 328px;
+}
+
+#pako_main #git_solo {
+    display: inline-block;
+    width: 100%;
+}
+
+#pako_main #git_solo > svg:first-of-type {
+    margin-right: 25px;
+    padding-top: 8px;
 }
 
 #pako_main #g_i_t_ {
-    position: absolute;
-    top: 1050px;
-    left: 30px;
+    align-self: flex-start; 
+    margin-left: 10px;
 }
 
 #pako_main #frameWorks {
@@ -224,4 +308,36 @@ l#pako_main i {
 #pako_main #vueJS {
     align-self: end;
     margin-left: 50px;
+}
+
+#pako_main #get_deep {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-right: 20px;
+    font-size: 28px;
+    background: linear-gradient(to bottom, #89bbff, #4a8dff);
+    width: 100%;
+    padding-bottom: 158px;
+    color: white;
+}
+
+
+#pako_main #div_frames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    margin-left: 16px;
+}
+
+#pako_main #pako_choose {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-size: 26px;
+    width: 80%;
 }
