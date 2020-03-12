@@ -51,6 +51,28 @@ main {
     height: auto;
     padding: 20px;
 }
+/* Armin Riri */
+.wrapper {
+    width: 400px;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #ffa400;
+    padding-bottom: 20px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.hyperlink {
+    color: #ffa400;
 
 /* Texte intro-ressources */
 
@@ -105,6 +127,7 @@ footer a:hover {
 
 /* ICI ON MET LES CLASS ET ID */
 
+  
 .infos-section
 {
     width: 85%;
@@ -192,8 +215,6 @@ footer a:hover {
 
 .btn.btn-link:hover {
     color: var(--orange);
-}
-
 
 /* MEDIA QUERIES DESKTOP */
 
@@ -204,4 +225,6 @@ footer a:hover {
     #accordion-howto h2 {
         font-size: 2em;
     }
+    #pading-photo p {
+        padding-left: 20px;
 }
