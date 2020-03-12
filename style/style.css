@@ -37,14 +37,15 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
     padding: 10px;
-
 }
 
-/*
 
-main {}
 
-*/
+main {
+    padding: 20px;
+}
+
+
 
 form input,
 select,
@@ -64,18 +65,93 @@ aside {}
 */
 
 footer {
+    margin-top: 5vh;
+    background-color: var(--black);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--orange);
+    transition-duration: 0.5s;
     margin-top: 10px;
     background-color: var(--black);
 }
 
 /* ICI ON MET LES CLASS ET ID */
 
-.infos-form {
+.infos-section
+{
+    width: 85%;
+    margin: 8px auto;
+}
+
+.infos-section h2
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.infos-section h3
+{
+    font-size: x-large;
+}
+
+.infos-form
+{
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 5%;
-  }
+}
+
+.infos-form input, select, textarea
+{   
+    width: 85%;
+    border-radius: 5px;
+    margin: 8px auto; 
+    border: none;
+    border-bottom-style: none;
+}
+
+.infos-form input:focus, .infos-form textarea:focus
+{
+    background-color: rgb(230, 230, 230);
+    border: 1px solid #ff8300;
+}
+
+.infos-form .button
+{
+    background-color: #ff8300;
+}
+
+.infos-form .button:hover
+{
+    background-color: #ffa400;
+    font-weight: bold;
+}
+
+.infos-form select option
+{
+    color: black;
+}
+
+.infos-form select:invalid
+{
+    color: grey;
+}
+
+.infos-form textarea
+{
+    overflow: auto;
+    resize: none;
+}
+
+
 
 /* MEDIA QUERIES DESKTOP */
 /*
