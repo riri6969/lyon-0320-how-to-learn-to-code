@@ -139,6 +139,10 @@ footer a {
     color: white;
 }
 
+footer p {
+    color: white;
+}
+
 footer a:hover {
     text-decoration: none;
     color: var(--orange);
