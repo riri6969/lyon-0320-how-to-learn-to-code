@@ -20,7 +20,7 @@ body {
     color: black;
 }
 
-header {
+body > header:first-of-type {
     background-color: var(--orange-background-color);
 }
 
@@ -47,7 +47,7 @@ article {}
 aside {}
 */
 
-footer {
+body > footer:last-of-type {
     margin-top: 10px;
     background-color: var(--black-background-color);
 }
@@ -171,7 +171,7 @@ l#pako_main i {
     margin: 0 auto;
 }
 
-blockquote
+#pako_main blockquote
 {
   font-style: normal;
   font-size: 16px;
