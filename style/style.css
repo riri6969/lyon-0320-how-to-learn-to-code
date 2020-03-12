@@ -95,18 +95,6 @@ footer a {
     color: white;
 }
 
-
-footer {
-    margin-top: 5vh;
-    background-color: var(--black);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
-    color: white;
-}
-
-footer a {
-    color: white;
-}
-
 footer a:hover {
     text-decoration: none;
     color: var(--orange);
