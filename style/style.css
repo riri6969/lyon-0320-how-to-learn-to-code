@@ -52,10 +52,22 @@ main {
     padding: 20px;
 }
 
-/* Texte intro-ressources */
-
+/* Texte et img intro-ressources */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.intro .img-container {
+    max-width: 650px;
+  }
+.intro img {
+    width: 100%;
+    height: auto;
+}
 p.intro-ressources {
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Modif couleur logo page ressources */
