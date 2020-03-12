@@ -48,7 +48,7 @@ p.intro-ressources {
     padding: 20px;
 }
 
-/* Modif couleur logo ressources */
+/* Modif couleur logo page ressources */
 .fa-html5   {
     color: #e34f26;
 }
@@ -57,6 +57,12 @@ p.intro-ressources {
 }
 .fa-js-square {
     color: #f0db4f;
+}
+.fa-book-open {
+    color: var(--orange);
+}
+.fa-tools {
+    color: var(--orange);
 }
 
 form input,
