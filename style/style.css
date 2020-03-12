@@ -105,6 +105,72 @@ footer a:hover {
 
 /* ICI ON MET LES CLASS ET ID */
 
+.infos-section
+{
+    width: 85%;
+    margin: 8px auto;
+}
+
+.infos-section h2
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.infos-section h3
+{
+    font-size: x-large;
+}
+
+.infos-form
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.infos-form input, select, textarea
+{   
+    width: 85%;
+    border-radius: 5px;
+    margin: 8px auto; 
+    border: none;
+    border-bottom-style: none;
+}
+
+.infos-form input:focus, .infos-form textarea:focus
+{
+    background-color: rgb(230, 230, 230);
+    border: 1px solid #ff8300;
+}
+
+.infos-form .button
+{
+    background-color: #ff8300;
+}
+
+.infos-form .button:hover
+{
+    background-color: #ffa400;
+    font-weight: bold;
+}
+
+.infos-form select option
+{
+    color: black;
+}
+
+.infos-form select:invalid
+{
+    color: grey;
+}
+
+.infos-form textarea
+{
+    overflow: auto;
+    resize: none;
+}
+
 #accordion-howto {
     display: flex;
     flex-direction: column;
@@ -128,9 +194,13 @@ footer a:hover {
     color: var(--orange);
 }
 
+
 /* MEDIA QUERIES DESKTOP */
 
 @media only screen and (min-width: 992px) {
+    .infos-form input, select, textarea, .button {
+        width: 60%;
+    }
     #accordion-howto h2 {
         font-size: 2em;
     }
