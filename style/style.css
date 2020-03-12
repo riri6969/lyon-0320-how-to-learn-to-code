@@ -73,8 +73,10 @@ main {
   }
 .hyperlink {
     color: #ffa400;
+}
 
 /* Texte et img intro-ressources */
+
 .intro {
     display: flex;
     flex-wrap: wrap;
