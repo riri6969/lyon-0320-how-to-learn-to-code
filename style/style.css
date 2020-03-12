@@ -154,7 +154,10 @@ footer a:hover {
 
 
 /* MEDIA QUERIES DESKTOP */
-/*
-@media only screen (min-width: 992px) {
-    ...
-} */
+
+@media only screen and (min-width: 992px) {
+    .infos-form input, select, textarea, .button
+    {
+        width: 60%;
+    }
+}
