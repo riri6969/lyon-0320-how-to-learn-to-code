@@ -141,7 +141,9 @@ footer a:hover {
 //////////////////////// PAKO STYLE MODAFUCKA ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////// */
 
-#pako_main section:first-of-type {
+
+
+#pako_main section:first-of-type, #pako_main > header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +183,19 @@ footer a:hover {
 
 /* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
 
-#pako_main { height: 1840px;}
+#pako_main {
+    height: 1960px; 
+    width: 500px; 
+    margin: 0 auto;
+}
+
+#pako_main > section:first-of-type {
+    /* animation-name: toScale; */
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    /* -webkit-animation-name: toScale; */
+    -webkit-animation-duration: 3s;
+}
 
 #pako_main li {
     list-style-type: none;
@@ -282,8 +296,9 @@ footer a:hover {
 }
 
 #pako_main #git_solo {
-    display: inline-block;
-    width: 100%;
+    position: absolute;
+    top: 1060px;
+    left: 30px;
 }
 
 #pako_main #git_solo > svg:first-of-type {
@@ -340,4 +355,24 @@ footer a:hover {
     margin: 30px auto;
     font-size: 26px;
     width: 80%;
+}
+
+.btn_action:active + #pako_main {
+    transform: scale(1);
+}
+
+#pako_main svg {
+    cursor: pointer;
+}
+
+
+
+@keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
+}
+
+@-webkit-keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
 }
