@@ -265,10 +265,10 @@ footer a:hover {
 
 #pako_main > section:first-of-type {
     /* animation-name: toScale; */
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     /* -webkit-animation-name: toScale; */
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 1s;
 }
 
 #pako_main li {
@@ -305,17 +305,19 @@ footer a:hover {
     display: flex;
 }
 
-#pako_main .modal-footer {
+#pako_main .modal-footer a {
     display: flex;
     justify-content: flex-end;
 }
 
-#pako_main .modal-footer > h6 {
-    margin-bottom: 4px;
+
+#pako_main .modal-footer h6 {
+    margin-top: 4px;
 }
 
-#pako_main .modal-footer > i {
+#pako_main .modal-footer i {
     font-size: 26px;
+    margin-left: 10px;
 }
 
 #pako_main .modal-body > li:not(:last-of-type) {
