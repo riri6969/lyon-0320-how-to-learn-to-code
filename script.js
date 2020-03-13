@@ -11,11 +11,15 @@
 
 $(function() {
 	const main = $('#jquery');
+	const ress = $('.modal-footer');
 
     main.css('display','none');
 
 	$('.button_pako_front').click(() => {
-		main.fadeIn(5000);
-    });
+		main.fadeIn(1000);
+	});
+	
+	// ress.click( () => {
+	// 	window.onload(ressources.html);
+	// });
 });
-
