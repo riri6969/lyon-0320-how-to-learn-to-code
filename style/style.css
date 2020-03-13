@@ -211,6 +211,9 @@ textarea {
     resize: none;
 }
 
+.intro-howto {
+    padding: 30px;
+}
 #accordion-howto {
     display: flex;
     flex-direction: column;
