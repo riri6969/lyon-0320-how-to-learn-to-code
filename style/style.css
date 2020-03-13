@@ -1,0 +1,555 @@
+/* CSS MOBILE FIRST */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: #ff8300;
+    --black: #343a40;
+    --roboto-condensed: 'Roboto Condensed', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --Montserrat-Subra: 'Montserrat Subrayada', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--roboto);
+    background-color: #f0f0f0;
+    padding-top: 40px;
+}
+
+nav {
+    position: fixed;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: var(--Montserrat-Subra);
+    
+}
+
+.fa-connectdevelop {
+    margin: 0 15px;
+}
+
+.navbar.fixed-top.navbar-expand-lg.navbar-light {
+    background: linear-gradient(to right, var(--orange), #ffa400);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+main {
+    height: auto;
+    padding: 20px;
+}
+
+/* Texte intro-ressources */
+
+p.intro-ressources {
+    padding: 20px;
+}
+
+/* Modif couleur logo page ressources */
+.fa-html5   {
+    color: #e34f26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
+.fa-book-open {
+    color: var(--orange);
+}
+
+
+.fa-connectdevelop {
+    margin: 0 15px;
+}
+
+.navbar.fixed-top.navbar-expand-lg.navbar-light {
+    background: linear-gradient(to right, var(--orange), #ffa400);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+main {
+    height: auto;
+    padding: 20px;
+}
+
+/* Armin Riri */
+.wrapper {
+    width: 400px;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #ffa400;
+    padding-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hyperlink {
+    color: #ffa400;
+}
+
+/* Texte et img intro-ressources */
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.intro .img-container {
+    max-width: 650px;
+  }
+.intro img {
+    width: 100%;
+    height: auto;
+}
+p.intro-ressources {
+    padding: 30px;
+}
+
+/* Modif couleur logo page ressources */
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-js-square {
+    color: #f0db4f;
+}
+
+.fa-book-open {
+    color: var(--orange);
+}
+
+.fa-tools {
+    color: var(--orange);
+}
+
+form input,
+select,
+textarea {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--black);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+footer a, footer p {
+    color: white;
+}
+
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--orange);
+    transition-duration: 0.5s;
+    margin-top: 10px;
+    background-color: var(--black);
+}
+/* ICI ON MET LES CLASS ET ID */
+#accordion-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#accordion-howto h2 {
+    font-size: 1.6em;
+}
+
+.btn.btn-link {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-link:hover {
+    color: var(--orange);
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// PAKO STYLE MODAFUCKA ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+#pako_main section:first-of-type, #pako_main > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#pako_main h1 {margin: 50px auto;}
+
+.button_pako {
+    border: none;
+    color: white;
+    padding: 6px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button_pako_back {
+    background-color: #444;
+    color: WHITE;
+    border: 2px solid #555555;
+    cursor: not-allowed;
+}
+.button_pako_front {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+#pako_main .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
+
+#pako_main {
+    height: 1960px; 
+    width: 500px; 
+    margin: 0 auto;
+}
+
+#pako_main > section:first-of-type {
+    /* animation-name: toScale; */
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* -webkit-animation-name: toScale; */
+    -webkit-animation-duration: 1s;
+}
+
+#pako_main li {
+    list-style-type: none;
+}
+
+#pako_main cite {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+#pako_main cite > a {
+    margin-left: 10px;
+}
+
+#pako_main pre { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 390px;
+}
+
+#pako_main pre > var:not(:first-of-type), pre > strong:last-of-type {
+    margin-left: 100px;
+}
+
+#pako_main blockquote > p {
+    margin:0;
+}
+
+#pako_main .modal-header {
+    display: flex;
+}
+
+#pako_main .modal-footer a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#pako_main .modal-footer h6 {
+    margin-top: 4px;
+}
+
+#pako_main .modal-footer i {
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+#pako_main .modal-body > li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+#pako_main .modal-body > li:first-of-type {
+    display: flex; 
+    margin-top: 20px;
+}
+
+#pako_main #anatomie {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pako_main blockquote
+{
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 32px;
+  font-family: Consolas, "Times New Roman", Verdana;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+}
+
+#pako_main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 440px;
+    margin: 80px auto;
+}
+
+#pako_main > section:nth-of-type(2) > svg:first-of-type {
+    margin-bottom: 60px;
+}
+
+#pako_main #c_s_s {
+    display: inline-block;
+}
+
+#pako_main #c_s_s > svg:nth-of-type(2) , #c_s_s > svg:nth-of-type(4) {
+    margin-top: 50px;
+}
+
+#pako_main #j_s_ {
+    display: inline-block;
+    width: 328px;
+}
+
+#pako_main #git_solo {
+    position: absolute;
+    top: 1060px;
+    left: 30px;
+}
+
+#pako_main #git_solo > svg:first-of-type {
+    margin-right: 25px;
+    padding-top: 8px;
+}
+
+#pako_main #g_i_t_ {
+    align-self: flex-start; 
+    margin-left: 10px;
+}
+
+#pako_main #frameWorks {
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+#pako_main #angularTS {
+    align-self: start;
+}
+
+#pako_main #vueJS {
+    align-self: end;
+    margin-left: 50px;
+}
+
+#pako_main #get_deep {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-right: 20px;
+    font-size: 28px;
+    background: linear-gradient(to bottom, #89bbff, #4a8dff);
+    width: 100%;
+    padding-bottom: 158px;
+    color: white;
+}
+
+
+#pako_main #div_frames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    margin-left: 16px;
+}
+
+#pako_main #pako_choose {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-size: 26px;
+    width: 80%;
+}
+
+.btn_action:active + #pako_main {
+    transform: scale(1);
+}
+
+#pako_main svg {
+    cursor: pointer;
+}
+
+
+
+@keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
+}
+
+@-webkit-keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
+}
+
+.infos-section {
+    width: 85%;
+    margin: 8px auto;
+}
+
+.infos-section h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.infos-section h3 {
+    font-size: x-large;
+}
+
+.infos-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.infos-form input,
+select,
+textarea {
+    width: 85%;
+    border-radius: 5px;
+    margin: 8px auto;
+    border: none;
+    border-bottom-style: none;
+}
+
+.infos-form input:focus,
+.infos-form textarea:focus {
+    background-color: rgb(230, 230, 230);
+    border: 1px solid #ff8300;
+}
+
+.infos-form .button {
+    background-color: #ff8300;
+}
+
+.infos-form .button:hover {
+    background-color: #ffa400;
+    font-weight: bold;
+}
+
+.infos-form select option {
+    color: black;
+}
+
+.infos-form select:invalid {
+    color: grey;
+}
+
+.infos-form textarea {
+    overflow: auto;
+    resize: none;
+}
+
+.intro-howto {
+    padding: 30px;
+}
+  
+#accordion-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#accordion-howto h2 {
+    font-size: 1.6em;
+}
+
+.btn.btn-link {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-link:hover {
+    color: var(--orange);
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media only screen and (min-width: 992px) {
+
+    .infos-form input,
+    select,
+    textarea,
+    .button {
+        width: 60%;
+    }
+
+    #accordion-howto h2 {
+        font-size: 2em;
+    }
+}
