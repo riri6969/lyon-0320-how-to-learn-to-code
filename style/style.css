@@ -32,8 +32,46 @@ nav {
     display: flex;
     align-items: center;
     font-family: var(--Montserrat-Subra);
-
+    
 }
+
+.fa-connectdevelop {
+    margin: 0 15px;
+}
+
+.navbar.fixed-top.navbar-expand-lg.navbar-light {
+    background: linear-gradient(to right, var(--orange), #ffa400);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+main {
+    height: auto;
+    padding: 20px;
+}
+
+/* Texte intro-ressources */
+
+p.intro-ressources {
+    padding: 20px;
+}
+
+/* Modif couleur logo page ressources */
+.fa-html5   {
+    color: #e34f26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
+.fa-book-open {
+    color: var(--orange);
+}
+
 
 .fa-connectdevelop {
     margin: 0 15px;
@@ -135,13 +173,10 @@ footer {
     color: white;
 }
 
-footer a {
+footer a, footer p {
     color: white;
 }
 
-footer p {
-    color: white;
-}
 
 footer a:hover {
     text-decoration: none;
@@ -151,8 +186,270 @@ footer a:hover {
     background-color: var(--black);
 }
 /* ICI ON MET LES CLASS ET ID */
+#accordion-howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#accordion-howto h2 {
+    font-size: 1.6em;
+}
+
+.btn.btn-link {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+}
+
+.btn.btn-link:hover {
+    color: var(--orange);
+}
 
 
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////// PAKO STYLE MODAFUCKA ///////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+#pako_main section:first-of-type, #pako_main > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#pako_main h1 {margin: 50px auto;}
+
+.button_pako {
+    border: none;
+    color: white;
+    padding: 6px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button_pako_back {
+    background-color: #444;
+    color: WHITE;
+    border: 2px solid #555555;
+    cursor: not-allowed;
+}
+.button_pako_front {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+#pako_main .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* //////////////////////////////////////////////// ROADMAP ///////////////////////////////// */
+
+#pako_main {
+    height: 1960px; 
+    width: 500px; 
+    margin: 0 auto;
+}
+
+#pako_main > section:first-of-type {
+    /* animation-name: toScale; */
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    /* -webkit-animation-name: toScale; */
+    -webkit-animation-duration: 3s;
+}
+
+#pako_main li {
+    list-style-type: none;
+}
+
+#pako_main cite {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+#pako_main cite > a {
+    margin-left: 10px;
+}
+
+#pako_main pre { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 390px;
+}
+
+#pako_main pre > var:not(:first-of-type), pre > strong:last-of-type {
+    margin-left: 100px;
+}
+
+#pako_main blockquote > p {
+    margin:0;
+}
+
+#pako_main .modal-header {
+    display: flex;
+}
+
+#pako_main .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pako_main .modal-footer > h6 {
+    margin-bottom: 4px;
+}
+
+#pako_main .modal-footer > i {
+    font-size: 26px;
+}
+
+#pako_main .modal-body > li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+#pako_main .modal-body > li:first-of-type {
+    display: flex; 
+    margin-top: 20px;
+}
+
+#pako_main #anatomie {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pako_main blockquote
+{
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 32px;
+  font-family: Consolas, "Times New Roman", Verdana;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+}
+
+#pako_main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 440px;
+    margin: 80px auto;
+}
+
+#pako_main > section:nth-of-type(2) > svg:first-of-type {
+    margin-bottom: 60px;
+}
+
+#pako_main #c_s_s {
+    display: inline-block;
+}
+
+#pako_main #c_s_s > svg:nth-of-type(2) , #c_s_s > svg:nth-of-type(4) {
+    margin-top: 50px;
+}
+
+#pako_main #j_s_ {
+    display: inline-block;
+    width: 328px;
+}
+
+#pako_main #git_solo {
+    position: absolute;
+    top: 1060px;
+    left: 30px;
+}
+
+#pako_main #git_solo > svg:first-of-type {
+    margin-right: 25px;
+    padding-top: 8px;
+}
+
+#pako_main #g_i_t_ {
+    align-self: flex-start; 
+    margin-left: 10px;
+}
+
+#pako_main #frameWorks {
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+#pako_main #angularTS {
+    align-self: start;
+}
+
+#pako_main #vueJS {
+    align-self: end;
+    margin-left: 50px;
+}
+
+#pako_main #get_deep {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-right: 20px;
+    font-size: 28px;
+    background: linear-gradient(to bottom, #89bbff, #4a8dff);
+    width: 100%;
+    padding-bottom: 158px;
+    color: white;
+}
+
+
+#pako_main #div_frames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    margin-left: 16px;
+}
+
+#pako_main #pako_choose {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-size: 26px;
+    width: 80%;
+}
+
+.btn_action:active + #pako_main {
+    transform: scale(1);
+}
+
+#pako_main svg {
+    cursor: pointer;
+}
+
+
+
+@keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
+}
+
+@-webkit-keyframes toScale {
+    from { transform: scale(0.1);}
+    to { transform: scale(1);}
+wild
 .infos-section {
     width: 85%;
     margin: 8px auto;
@@ -214,6 +511,7 @@ textarea {
 .intro-howto {
     padding: 30px;
 }
+  
 #accordion-howto {
     display: flex;
     flex-direction: column;
