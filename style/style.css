@@ -449,7 +449,8 @@ footer a:hover {
 @-webkit-keyframes toScale {
     from { transform: scale(0.1);}
     to { transform: scale(1);}
-wild
+}
+
 .infos-section {
     width: 85%;
     margin: 8px auto;
