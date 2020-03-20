@@ -60,9 +60,12 @@
       <hr class="m-4">
     </section>
     <section>
+      <h1 class="text-center mt-5"> Formulaire :</h1>
       <form class="infos-form">
-        <input type="text" placeholder="Nom :" required>
-        <input type="email" placeholder="@ :" required>
+        <label for="fname"> Nom </label>
+        <input id= "fname" type="text" placeholder="Nom :" required>
+        <label for="mail"> mail </label>
+        <input id="mail" type="email" placeholder="@ :" required>
         <select class=infos-select id="infos-motif" required>
             <option value="" disabled selected hidden>Une question/remarque?</option>
             <option value="métier dev.">Plus de renseignements sur le métier de dev.</option>
@@ -70,7 +73,7 @@
             <option value="suggestion">Suggestion concernant le site</option>
             <option value="contact">Entrer en contact avec l'équipe</option>
         </select>
-        <textarea label="Message" placeholder="Message :" rows="5"></textarea>
+        <textarea  placeholder="Message :" rows="5"></textarea>
         <input type="submit" value="Envoyer !" class="button">
       </form>
     </section>
@@ -130,7 +133,7 @@
     </div>
     <!-- Grid row-->
 
-    </div>
+    
     <!-- Footer Links -->
 
     <!-- Copyright -->
