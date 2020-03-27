@@ -117,6 +117,25 @@ main {
     color: #ffa400;
 }
 
+#slider img{
+    width:500px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+}
+
+#slider button {
+    border: none;
+    height: 250px;
+    vertical-align: top;
+    font-size:2em;
+    background-color: :rgb(30,30,30);
+    color:#fff
+    cursor:pointer
+
+}
+#slider button:active{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
 /* Texte et img intro-ressources */
 
 .intro {
