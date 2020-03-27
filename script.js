@@ -24,14 +24,14 @@ $(function() {
 	// });
 });
 
-
+$(function() {
 const SLIDER_WIDTH= 4
-let coreUrl = 'https://www.voyage.fr/sites/default/files/inline-images/';
+let coreUrl= "images/"
 let images = [
 	`${coreUrl}01-l-altai.jpg`,
-	`${coreUrl}02-volcan-kamchatka.jpgalt`,
-	`${coreUrl}03-peninsule-de-kola.jpgalt`,
-	`${coreUrl}04-lac-ladoga.jp`,
+	`${coreUrl}02-volcan-kamchatka.jpg`,
+	`${coreUrl}03-peninsule-de-kola.jpg`,
+	`${coreUrl}04-lac-ladoga.jpg`,
 	`${coreUrl}05-curonian-spit.jpg`,
 	`${coreUrl}06-khibiny.jpg `,
 ];
@@ -49,7 +49,7 @@ document.getElementById('rightBtn').addEventListener('mouseup',()=>{
 insertToDom = () => {
 	let slider = document.getElementById('slider');
 		for (let i = 0 ; i<SLIDER_WIDTH; i++){
-			slider.getElementsByTagName('img')[i].src=iages[i]
+			slider.getElementsByTagName('img')[i].src=images[i]
 		}
 }
 permuteToLeft=()=>{
@@ -67,3 +67,4 @@ permuteToRight = () => {
 	}
 	images[0]= tmp
 }
+})
