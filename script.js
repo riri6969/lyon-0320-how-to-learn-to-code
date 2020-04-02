@@ -68,3 +68,10 @@ permuteToRight = () => {
 	images[0]= tmp
 }
 })
+
+
+$(".hover").mouseleave(
+	function () {
+	  $(this).removeClass("hover");
+	}
+  );
