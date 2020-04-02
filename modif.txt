@@ -1,0 +1,6 @@
+Ajout des infos dans alt
+modif pour passer au validateur
+Snipet : 
+-dark mode
+-gallery
+-hoover gallery
